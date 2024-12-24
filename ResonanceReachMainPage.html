@@ -1,7 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance Reach</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #fff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .performances {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .performance {
+            background: #2a2a2a;
+            border: 1px solid #555;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .performance:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .performance h3 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slideshow video {
+            width: 100%;
+            display: block;
+        }
+
+        .contact a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div>
+            
+            <h1>Resonance Reach</h1>
+            <img src="Screenshot 2024-12-23 at 6.54.50 PM.png" alt="Resonance Reach Logo">
+            <nav>
+                <a href="#about">About</a>
+                <a href="#performances">Performances</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Resonance Reach</h2>
+            <p>Resonance Reach is a nonprofit organization dedicated to bringing live music performances to nursing homes and retirement communities. We aim to create memorable experiences that uplift and inspire through the power of music.</p>
+        </section>
+
+        <section id="slideshow">
+            <h2>Performance Highlights</h2>
+            <div class="slideshow">
+                <video src="example1.mp4" autoplay muted loop></video>
+            </div>
+        </section>
+
+        <section id="performances">
+            <h2>Upcoming Performances</h2>
+            <div class="performances">
+                <div class="performance">
+                    <h3>Christmas</h3>
+                    <p><strong>Date:</strong> December 27, 2023</p>
+                    <p><strong>Location:</strong> Tribute at One Loudon</p>
+                    <p><strong>Highlights:</strong> Featuring piano and cello duets, including the "Fantasy Impromptu" by Chopin.</p>
+                </div>
+                <div class="performance">
+                    <h3>Christmas</h3>
+                    <p><strong>Date:</strong> December 27, 2023</p>
+                    <p><strong>Location:</strong> Tribute at One Loudon</p>
+                    <p><strong>Highlights:</strong> Featuring piano and cello duets, including the "Fantasy Impromptu" by Chopin.</p>
+                </div>
+                <div class="performance">
+                    <h3>Christmas</h3>
+                    <p><strong>Date:</strong> December 27, 2023</p>
+                    <p><strong>Location:</strong> Tribute at One Loudon</p>
+                    <p><strong>Highlights:</strong> Featuring piano and cello duets, including the "Fantasy Impromptu" by Chopin.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you’d like to support our mission or learn more about our performances, please reach out to us at <a href="mailto:seanschwartzshs@gmail.com">seanschwartzshs@gmail.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Resonance Reach. All rights reserved. | <a href="#about">About</a> | <a href="#performances">Performances</a> | <a href="#contact">Contact</a></p>
+    </footer>
 </body>
 </html>
